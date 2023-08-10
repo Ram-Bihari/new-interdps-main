@@ -63,27 +63,31 @@
     <section id="envir">
       <div class="yellow"><center><h1 class="h1">Environmental Impact</h1></center></div>
       <div class="flex-container">
-        <div class="flex">
-          <img class="card__img" src="../new-interdps-main/images/depletion.jpg" alt="resources depletion">
+        <div class="flex_1 flex">
+          <img class="card__img" src="depletion.jpg" alt="resources depletion">
           <h2><i class="fa-solid fa-bolt fa-beat" style="color: #FBAE3C; padding-right: 10px;"></i>Resource Depletion :</h2>
           <p class="text">
           Textile manufacture demands a large quantity of resources, including water, energy, and raw materials such as cotton, polyester, and leather. Excessive output leads to resource depletion.
         </p>
         </div>
-        <div class="flex">
-          <img class="card_img" src="../new-interdps-main/" alt="pollution"
+        <div class="flex_1 flex">
+          <img class="card__img" src="pollution.jpg" alt="pollution">
           <h2><i class="fa-solid fa-industry fa-beat" style="color: #FBAE3C;padding-right: 10px;"></i>Pollution :</h2>
         <p class="text">
           Chemicals, dyes, and finishing agents used in textile production can damage streams and soil. The emission of hazardous chemicals can harm the environment and human health.
         </p>
         </div>
-        <div class="flex"><h2><i class="fa-solid fa-wind fa-beat" style="color: #FBAE3C;padding-right: 10px;"></i>Greenhouse Gas :</h2>
+        <div class="flex">
+          <img class="card__img" src="gas.jpg" alt="Greenhouse gas emissions">
+          <h2><i class="fa-solid fa-wind fa-beat" style="color: #FBAE3C;padding-right: 10px;"></i>Greenhouse Gas :</h2>
         <p class="text">
           Due to energy-intensive processes such as manufacturing, transportation, and retail operations, the fashion business contributes significantly to greenhouse gas emissions.
 
         </p> 
         </div>
-        <div class="flex"><h2><i class="fa-solid fa-dumpster fa-beat" style="color: #FBAE3C;padding-right: 10px;"></i>Landfill Waste :</h2>
+        <div class="flex">
+          <img class="card__img" src="waste.jpg" alt="landfills">
+          <h2><i class="fa-solid fa-dumpster fa-beat" style="color: #FBAE3C;padding-right: 10px;"></i>Landfill Waste :</h2>
         <p class="text">
           Discarded garments and accessories frequently wind up in landfills due to overproduction, short lifecycles, consumer behavior, and a lack of biodegradability, contributing to a growing issue of overflowing waste sites.
 
@@ -99,7 +103,7 @@
       
     </section>
     <center>
- <div class="flex-container">
+ <div class="flex-container-1">
         <div class="flex-1">
           
           <h2 class="one">Labor Exploitation :</h2>
@@ -110,15 +114,15 @@
         <div class="flex-1">
           <h2 class="one">Consumer Culture :</h2>
         <p class="text">
-          Fast fashion encourages people to buy more and discard stuff rapidly, promoting an overconsumption and disposability culture.
-  
+          Consumer culture prioritizes excessive clothing and accessory consumption, resulting in significant fashion waste, which includes discarded garments, accessories, as a result of trends and marketing strategies.
+ 
         </p>
         </div>
         <div class="flex-1">
           <h2 class="one">
             Inequity :</h2>
         <p class="text">
-          Fashion waste contributes to global economic im in underdeveloped countries with inexpensive apparel from wealthy countries, affecting cal businesses and traditional industries. 
+          Social groups, often marginalized, bear disproportionate environmental and social consequences of excessive fashion consumption, affecting social justice, economic disparity, and environmental degradation.
 
         </p> 
         </div>      
@@ -127,8 +131,69 @@
     </center>
 <section id="responsible">
 <center><div class="yellow"><h1 class="h1">Who is responsible for fashion waste?</h1></div></center>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+ <center>
+    <h2 style="font-size: 25px;color: #FBAE3C;"><i class="fa-solid fa-person fa-beat" style="color: #fbae3c;"></i>Consumers :</h2>
+    </center>
+    <div class="text_1">Consumers contribute significantly to fashion waste. Their purchasing, wearing, and discarding of clothing all contribute to the overall volume of waste. Consumer demand for low-cost, frequently changing styles has fueled fast fashion's culture of rapid consumption and disposal.
+    </div>
+  </div>
+  
+  <div class="mySlides fade">
+ 
+    <div class="text_1">Caption Two</div>
+  </div>
+  
+  <div class="mySlides fade">
+   
+    
+    <div class="text_1">Caption Three</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 </section>
-footer class="footer">
+<footer class="footer">
         <div class="footer-content">
           <p>Made with ❤️ by Team DPSN</p>
         </div>
