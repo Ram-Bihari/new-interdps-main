@@ -1,5 +1,5 @@
 <html>
-<head><title>Fashion Waste</title>
+<head><title>Brands</title>
  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
@@ -21,7 +21,7 @@
                 <header>
                     <center>
                         <ul class="navlinks">
-                            <li><a href="#" class="left">Home</a></li>          
+                            <li><a href="index.html" class="left">Home</a></li>          
                             <li><a href="impact.html" class="left" target="_blank">Impact</a></li>
                             <li><a href="sol.html" class="left" target="_blank">Solutions</a></li>
                             <div class="search-container">
@@ -70,11 +70,40 @@
                   <img src="./decathlon.jpg" alt="Card 3">
                   <div class="brands-card-content">
                     <h2 class="brands-card-title">Decathlon</h2>
-                    <p class="brands-card-description">Stunning CSS.</p>
+                    <p class="brands-card-description">Decathalon strives to reduce their carbon footprint by implementing energy-efficient processes, utilizing renewable energy sources, and optimizing their supply chain.
+                      This includes employing recycled or environmentally friendly components in their products to reduce their environmental impact.</p>
                   </div>
                 </div>
               </div>
       
         </section>
+        <button onclick="topFunction()" id="top" title="Go to top"><i data-feather="chevron-up" class="up" style="color: #f2f3f4;"></i></button>
+        <script>
+          feather.replace()
+        </script>
+        <script>
+          mybutton = document.getElementById("top");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        function topFunction() {
+          document.body.scrollTop = 0; 
+          document.documentElement.scrollTop = 0; 
+        }
+        </script>
+        <footer class="footer">
+          <div class="footer-content">
+            <p>Made with ❤️ by Team DPSN</p>
+          </div>
+        </footer>
         </body>
         </html>
