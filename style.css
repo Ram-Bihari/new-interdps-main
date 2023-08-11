@@ -174,8 +174,9 @@ form {
 
 #second {
     width: 100%;
-    height: 80vh;
+    height: 66em;
     background-color: #FA7268;
+    margin-bottom: 100px;
 }
 
 .wrap {
@@ -230,99 +231,88 @@ form {
 }
 
 #cards {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  margin-top: 30px;
 }
 
+
 .card {
-    margin: 20px;
-    width: 100%;
-    border-radius: 20px;
-    color: #f1f2f3;
-    background-color: #001220;
-    font-weight: 900;
-    text-align: center;
-    align-items: center;
-    padding: 20px;
-    display: inline-block;
-    flex: auto
+  max-width: 400px;
+  background-color: #001220;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: calc(33.33% - 20px);
+  margin-bottom: 30px;
+  padding: 24px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card h2 {
-    color: #FA7268
+  color: white;
 }
-#cards{
-    justify-content:space-between;
-    align-items:center;
-    text-align:center;
-    display: flex;
-    flex-flow: wrap;
-    width: 100%;
+.card p{
+  color: #f1f2f3;
+  font-size: 16px;
+}
 
-}
-.card{
-    margin:20px;
-    width:25%;
-    border-radius:20px;
-    color:#fff;
-    font-weight:900;
-    text-align:center;
-    align-items:center;
-    padding:20px;
-    /* display:inline-block;
-    flex:auto; */
-    background-color: #001220;
-    
-}
-.card h2{
-    color:#FA7268
-}
-.card:hover{
-    background-color:#313131;
-    color:#fff;
-    transition:all .6s ease 0s
+@media (max-width: 860px) {
+  .card {
+      width: calc(50% - 20px); 
+      
+  }
 
+  .card {
+      width: calc(50% - 20px);
+  }
 }
-@media (max-width:709px){
-    .card{
-        width: 50%;
-        font-size:10px
-        
-    }
-#cards{
-    justify-content:space-between;
-}}
-    
 
-.card:hover {
-    background-color: #313131;
-    color: #fff;
-    transition: all .6s ease 0s
+
+@media (max-width: 615px) {
+  .card {
+      width: calc(50% + 60px);
+  }
+
+  .card {
+      width: calc(50% + 60px);
+  }
+
+  #cards{
+      justify-content: center;
+  }
 }
-@media (max-width: 709px) {
-    .card {
-        width:29%;
-        font-size: 14px;
-        
-    }
-    }
 
 #gallery {
     line-height:0;
-    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-count:3; /* split it into 5 columns */
     -webkit-column-gap:5px; /* give it a 5px gap between columns */
-    -moz-column-count:5;
+    -moz-column-count:3;
     -moz-column-gap:5px;
-    column-count:5;
+    column-count:3;
     column-gap:5px;
  }
 
  #gallery img {
     width: 100% !important;
     height: auto !important;
-    margin-bottom:5px; /* to match column gap */
+    
+    margin: 10px;
  }
 
 
@@ -459,7 +449,7 @@ form {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      margin-bottom: 50%;
+     
     }
     .text{
       font-size: 1px;
@@ -471,6 +461,15 @@ form {
     }
     .card__img{
       width: 100%;
+      height: auto;
+    }
+    #social{
+      height: auto;
+    }
+    .flex-1{
+      height: auto;
+    }
+    #envir{
       height: auto;
     }
   }
@@ -571,10 +570,18 @@ form {
         justify-content: center; 
         align-items: center;
         padding: 0 20px;
+      
+    }
+    #social{
+      height: auto;
+    }
+    #envir{
+      height: auto;
     }
 
     .flex-1 {
-        flex: calc(50% - 24px); 
+        flex: calc(50% - 24px);
+        height: auto; 
     }
 }
 
@@ -583,6 +590,9 @@ form {
   position: relative;
   margin: auto;
   margin-top: 130px;
+}
+.mySlides h2{
+ font-size: 24px;
 }
 
 /* Next & previous buttons */
@@ -629,7 +639,7 @@ form {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  margin: 115 3px;
+  margin: 155 3px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -651,9 +661,33 @@ form {
   to {opacity: 1}
 }
 
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text_1 {font-size: 11px}
+  .slideshow-container{
+    margin-top: 5000px;
+  }
+  .text_1{
+    margin-bottom: -200%;
+  }
+  .dot{
+    margin-top: 20%;
+  }
+}
+@media (max-width: 770px){
+  .slideshow-container{
+    margin-top: 150px;
+    height: auto;
+  }
+}
+@media (max-width:890px){
+  .text_1{
+    margin-bottom: -20%;
+  }
+  .dot{
+    margin-top: 20%;
+  }
 }
 #sol {
     padding-top: 50px;
