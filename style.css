@@ -883,17 +883,17 @@ form {
 
 #DPSN {
   width: 100%;
-  height: 100vh;
+  height: 102vh;
 }
 
 .image-grid {
-	--gap: 16px;
+	--gap: 30px;
 	--num-cols: 4;
 	--row-height: 300px;
 
 	box-sizing: border-box;
 	padding: var(--gap);
-
+ 
 	display: grid;
 	grid-template-columns: repeat(var(--num-cols), 1fr);
 	grid-auto-rows: var(--row-height);
@@ -904,6 +904,7 @@ form {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+  border-radius: 10px;
 }
 
 .image-grid-col-2 {
