@@ -144,7 +144,7 @@
          
          </div>
        </section>
-       <button onclick="topFunction()" id="top" title="Go to top"><i data-feather="chevron-up" class="up"></i></button>
+       <button onclick="topFunction()" id="top" title="Go to top"><i data-feather="chevron-up" class="up" style="color: #f2f3f4;"></i></button>
        <script>
          feather.replace()
        </script>
@@ -167,9 +167,32 @@
          document.documentElement.scrollTop = 0; 
        }
        </script>
-       <footer>
-
-       </footer>
+       <footer class="footer">
+        <div class="footer-content">
+          <form action="javascript:redirect();">
+          <div class="radio-container">
+            <p class="radio">Was this website informative?</p>
+            <div class="radio-wrapper">
+              <label class="radio-button">
+                <input type="radio" name="radio-group" id="option1" value="yes" onclick="window.location.href = 'https://forms.gle/qBrGhFAGcBBMS7Zv5';" >
+                <span class="radio-checkmark"></span>
+                <span class="radio-label">Yes</span>
+              </label>
+            </div>
+          
+            <div class="radio-wrapper">
+              <label class="radio-button">
+                <input type="radio" name="radio-group" id="option2" value="no" onclick="window.location.href = 'https://forms.gle/qBrGhFAGcBBMS7Zv5';" >
+                <span class="radio-checkmark"></span>
+                <span class="radio-label">No</span>
+              </label>
+            </div>
+          </div>
+          </form>
+          <p>Made with ❤️ by Team DPSN</p>
+        </div>
+      </footer>
+  
 </body>
     
  </html>
