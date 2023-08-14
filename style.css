@@ -1169,3 +1169,39 @@ color: #f1f2f3;
 .accordion i{
   padding-top: -50px;
 }
+.h1_1{
+  color: #f1f2f3;
+  font-size: 40px;
+  padding-top: 0px;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+
+}
+.h1_1::after { 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background: none repeat scroll 0 0 transparent;
+  height: 2px;
+  width: 0;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.h1_1:hover::after { 
+  width: 100%; 
+  left: 0; 
+}
+
+#stats{
+  height: 50em;
+  width: 100%;
+  margin-bottom: 100px;
+  padding-top: 0;
+}
