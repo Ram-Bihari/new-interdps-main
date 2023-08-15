@@ -110,8 +110,9 @@
        <section id="stats">
         <center><h1 class="h1_1">Statistics on Fashion Waste</h1>
           <br>
+          <div class="container-1">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+        <canvas id="myChart" style="width:100%;max-width:600px;float: left;padding: 40px;"></canvas>
         <script>
           const xValues = ["Landfill", "Incineration" , "Recycling" , "Re-use"];
           const yValues = [57, 25,10,8];
@@ -122,7 +123,7 @@
             "#e8c3b9",
             "#1e7145"
           ];
-          
+        
           new Chart("myChart", {
             type: "pie",
             data: {
@@ -132,15 +133,30 @@
                 data: yValues
               }]
             },
+            
             options: {
               title: {
                 display: true,
                 text: "Final Share of Clothing Waste per year"
+                
+            
               }
             }
             
           });
-         
+          let chart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: {
+        layout: {
+            padding: 50
+        }
+    }
+});
+
+ 
+ 
+ 
           </script>
 
        </section>
