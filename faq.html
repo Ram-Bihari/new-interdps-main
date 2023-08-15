@@ -26,8 +26,6 @@
                     <center>
                         <ul class="navlinks">
                             <li><a href="#" class="left" style="padding-left: 30px;">Home</a></li>
-                            <li><a href="#second" class="left">About</a></li>
-                         
                             <li><a href="impact.html" class="left" target="_blank">Impact</a></li>
                             <li><a href="sol.html" class="left" target="_blank">Solutions</a></li>
                             <li><a href="brands.html" class="left" target="_blank">Brands</a></li>
@@ -108,3 +106,49 @@
 
         </center>
        </section>
+       <button onclick="topFunction()" id="top" title="Go to top"><i data-feather="chevron-up" class="up" style="color: #f2f3f4;"></i></button>
+       <script>
+         feather.replace()
+       </script>
+       <script>
+         mybutton = document.getElementById("top");
+       
+       
+       window.onscroll = function() {scrollFunction()};
+       
+       function scrollFunction() {
+         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+           mybutton.style.display = "block";
+         } else {
+           mybutton.style.display = "none";
+         }
+       }
+       
+       function topFunction() {
+         document.body.scrollTop = 0; 
+         document.documentElement.scrollTop = 0; 
+       }
+ 
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+       </script>
+       <footer class="footer">
+        <div class="footer-content">
+          <p>Made with ❤️ by Team DPSN</p>
+        </div>
+      </footer>
+  
+       </body></html>
